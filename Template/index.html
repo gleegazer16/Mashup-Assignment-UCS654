@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE MASHUP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">CREATE MASHUP</h2>
+        <form action="/process" method="post">
+            <div class="form-group">
+                <label for="singer_name">Singer Name:</label>
+                <input type="text" class="form-control" id="singer_name" name="singer_name" required>
+            </div>
+            <div class="form-group">
+                <label for="num_videos">Number of Videos (>10):</label>
+                <input type="number" class="form-control" id="num_videos" name="num_videos" required>
+            </div>
+            <div class="form-group">
+                <label for="duration_to_cut">Duration to Cut (seconds) (>20):</label>
+                <input type="number" class="form-control" id="duration_to_cut" name="duration_to_cut" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
